@@ -195,7 +195,8 @@
       var _this = this;
       //Vue.source插件，目前已经被axios代替,向后台的json文件要数据
 
-      this.$http.get('/api/cartData',{'id':123}).then(function(res){
+   // this.$http.get('/api/cartData',{'id':123}).then(function(res){
+      this.$http.get('./static/data/cartData.json',{'id':123}).then(function(res){
        // console.log(res);
         _this.productList = res.body.result.list;  
           _this.productList.forEach(function(val,key){
