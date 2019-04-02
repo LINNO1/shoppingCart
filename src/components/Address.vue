@@ -227,7 +227,8 @@
       /* 开发阶段，自己搭建路由 '/api/addressData'，后来发现，build之后一直找不到文件 ,*/
            //  this.$http.get('/api/addressData').then(response=>{
             /* 发布，直接将json文件存在static 目录下*/
-             this.$http.get('./static/data/address.json',{'id':123}).then(function(response){  
+            this.$http.get('./static/data/address.json').then(response=>{
+       
               console.log(response);
               var res = response.data;
               if(res.status===0){
