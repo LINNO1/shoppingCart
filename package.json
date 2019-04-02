@@ -1,8 +1,8 @@
 {
-  "name": "resume-a-resume",
+  "name": "shoppingCart",
   "version": "1.0.0",
   "description": "This is a shopping cart",
-  "author": " <>",
+  "author": " <LJM>",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
